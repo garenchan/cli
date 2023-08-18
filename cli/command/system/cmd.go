@@ -20,6 +20,7 @@ func NewSystemCommand(dockerCli command.Cli) *cobra.Command {
 		newDiskUsageCommand(dockerCli),
 		newPruneCommand(dockerCli),
 		newDialStdioCommand(dockerCli),
+		newBandwidthCommand(dockerCli),
 	)
 
 	return cmd
